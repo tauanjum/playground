@@ -1,0 +1,10 @@
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/javascript-action@v1
+      with:
+        milliseconds: 1000
+    - uses: Internal-Actions/tauhid621-internal-action@main
